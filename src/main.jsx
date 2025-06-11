@@ -31,6 +31,8 @@ import AuthProvider from './contexts/AuthProvider.jsx';
 import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
 import Login from './components/Login.jsx';
 import Signup from './components/Signup.jsx';
+import Profile from './components/Profile.jsx';
+import Orders from './components/Orders.jsx';
 
 const router = createBrowserRouter([
   {
@@ -69,6 +71,14 @@ const router = createBrowserRouter([
         path:"/contact",
         element:<Contact/>
       },
+        {
+    path:"profile",
+    element:<Profile/>
+  },
+   {
+    path:"orders",
+    element:<Orders/>
+  }
 
     ]
   },
@@ -80,6 +90,7 @@ const router = createBrowserRouter([
     path:"sign-up",
     element:<Signup/>
   }
+ 
 ]);
 
 
