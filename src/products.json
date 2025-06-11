@@ -845,5 +845,112 @@
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/f8d89293c9cb4bf08d52adb100f95a3a_9366/Steel_Metal_Bottle_2L_Black_EX7302_01_standard.jpg",
         "shipping": 27,
         "quantity": 0
-    }
+    },
+    
+  {
+    "id": "1",
+    "category": "Shoes",
+    "name": "Nike Premier X",
+    "seller": "Nike",
+    "price": 199,
+    "stock": 10,
+    "ratings": 4.5,
+    "ratingsCount": 30,
+    "img": "../src/assets/images/categoryTab/01.jpg",
+    "shipping": 25,
+    "quantity": 0
+  },
+  {
+    "id": "2",
+    "category": "Bags",
+    "name": "Asthetic Bags",
+    "seller": "D&J Bags",
+    "price": 199,
+    "stock": 8,
+    "ratings": 4,
+    "ratingsCount": 20,
+    "img": "../src/assets/images/categoryTab/02.jpg",
+    "shipping": 30,
+    "quantity": 0
+  },
+  {
+    "id": "3",
+    "category": "Phones",
+    "name": "iPhone 12",
+    "seller": "Apple",
+    "price": 199,
+    "stock": 5,
+    "ratings": 5,
+    "ratingsCount": 100,
+    "img": "../src/assets/images/categoryTab/03.jpg",
+    "shipping": 50,
+    "quantity": 0
+  },
+  {
+    "id": "4",
+    "category": "Bags",
+    "name": "Hiking Bag 15 Nh100",
+    "seller": "Gucci",
+    "price": 199,
+    "stock": 12,
+    "ratings": 4.2,
+    "ratingsCount": 15,
+    "img": "../src/assets/images/categoryTab/04.jpg",
+    "shipping": 28,
+    "quantity": 0
+  },
+  {
+    "id": "5",
+    "category": "Shoes",
+    "name": "Outdoor Sports Shoes",
+    "seller": "Nike",
+    "price": 199,
+    "stock": 7,
+    "ratings": 4.6,
+    "ratingsCount": 45,
+    "img": "../src/assets/images/categoryTab/05.jpg",
+    "shipping": 20,
+    "quantity": 0
+  },
+  {
+    "id": "6",
+    "category": "Beauty",
+    "name": "COSRX Snail Mucin",
+    "seller": "Zaara",
+    "price": 199,
+    "stock": 14,
+    "ratings": 4.8,
+    "ratingsCount": 60,
+    "img": "../src/assets/images/categoryTab/06.jpg",
+    "shipping": 18,
+    "quantity": 0
+  },
+  {
+    "id": "7",
+    "category": "Bags",
+    "name": "Look Less Chanel Bag",
+    "seller": "Gucci",
+    "price": 199,
+    "stock": 11,
+    "ratings": 4.3,
+    "ratingsCount": 25,
+    "img": "../src/assets/images/categoryTab/07.jpg",
+    "shipping": 29,
+    "quantity": 0
+  },
+  {
+    "id": "8",
+    "category": "Shoes",
+    "name": "Casual Sneakers",
+    "seller": "Bata",
+    "price": 199,
+    "stock": 9,
+    "ratings": 4.4,
+    "ratingsCount": 32,
+    "img": "../src/assets/images/categoryTab/08.jpg",
+    "shipping": 22,
+    "quantity": 0
+  }
+
+
 ]

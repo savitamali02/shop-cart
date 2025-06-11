@@ -2,6 +2,8 @@ import React, { useContext, useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo/logo.png";
 import { AuthContext } from "../contexts/AuthProvider";
+import { FaUser, FaBox, FaSignOutAlt } from "react-icons/fa"; // ← Add this at the top
+
 
 const NavItems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -130,21 +132,36 @@ const NavItems = () => {
             <div className="menu-area">
               <div className="menu">
                 <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/shop">Shop</Link></li>
-                  <li><Link to="/blog">Blog</Link></li>
-                  <li><Link to="/about">About</Link></li>
-                  <li><Link to="/contact">Contact</Link></li>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/shop">Shop</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
                 </ul>
               </div>
 
               {/* Auth Actions */}
               {!user ? (
                 <>
-                  <Link to="/sign-up" className="lab-btn me-1 d-none d-md-block">
+                  <Link
+                    to="/sign-up"
+                    className="lab-btn me-1 d-none d-md-block"
+                  >
                     Create Account
                   </Link>
-                  <Link to="/login" className="d-none d-md-block">Log in</Link>
+                  <Link to="/login" className="d-none d-md-block">
+                    Log in
+                  </Link>
                 </>
               ) : (
                 <div
@@ -169,28 +186,34 @@ const NavItems = () => {
                   {dropdownOpen && (
                     <div
                       className="position-absolute bg-white shadow p-2 rounded"
-                      style={{ top: "40px", right: "0", zIndex: 999 }}
+                      style={{
+                        top: "40px",
+                        right: "0",
+                        zIndex: 999,
+                        minWidth: "150px",
+                      }}
                     >
-                      <ul className="list-unstyled m-0">
-                        <li>
-                          <Link to="/profile" className="dropdown-item text-dark">
-                            Profile
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/orders" className="dropdown-item text-dark">
-                            Orders
-                          </Link>
-                        </li>
-                        <li>
-                          <button
-                            onClick={handleLogout}
-                            className="dropdown-item text-danger"
-                          >
-                            Logout
-                          </button>
-                        </li>
-                      </ul>
+                      <Link
+                        to="/profile"
+                        className="d-flex align-items-center gap-2 dropdown-item py-1 px-2"
+                        onClick={() => setDropdownOpen(false)}
+                      >
+                        <FaUser /> Profile
+                      </Link>
+                      <Link
+                        to="/orders"
+                        className="d-flex align-items-center gap-2 dropdown-item py-1 px-2"
+                        onClick={() => setDropdownOpen(false)}
+                      >
+                        <FaBox /> Orders
+                      </Link>
+                      <button
+                        onClick={handleLogout}
+                        className="btn btn-link text-start w-100 d-flex align-items-center gap-2 py-1 px-2"
+                        style={{ color: "#dc3545", textDecoration: "none" }}
+                      >
+                        <FaSignOutAlt /> Logout
+                      </button>
                     </div>
                   )}
                 </div>
@@ -201,7 +224,9 @@ const NavItems = () => {
                 onClick={() => setMenuToggle(!menuToggle)}
                 className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}
               >
-                <span></span><span></span><span></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
 
               <div
